@@ -1,0 +1,19 @@
+{
+  "name": "mongoviz",
+  "version": "1.0.0",
+  "description": "Mongoose schema to ERD generator",
+  "main": "mongoviz.js",
+  "bin": {
+    "mongoviz": "./bin/mongoviz.js"
+  },
+  "dependencies": {
+    "commander": "^2.20.0",
+    "mongoose": "^5.9.10",
+    "viz.js": "^2.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
