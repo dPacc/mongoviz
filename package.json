@@ -1,6 +1,6 @@
 {
   "name": "mongoviz",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Mongoose schema to ERD generator",
   "main": "mongoviz.js",
   "bin": {
