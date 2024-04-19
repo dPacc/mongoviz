@@ -2,6 +2,10 @@
   "name": "mongoviz",
   "version": "0.0.1",
   "description": "Mongoose schema to ERD generator",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dPacc/mongoviz.git"
+  },  
   "main": "mongoviz.js",
   "bin": {
     "mongoviz": "./bin/mongoviz.js"
