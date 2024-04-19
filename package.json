@@ -6,6 +6,15 @@
     "type": "git",
     "url": "git+https://github.com/dPacc/mongoviz.git"
   },
+  "keywords": [
+    "mongoose", 
+    "schema", 
+    "ERD", 
+    "database", 
+    "visualization", 
+    "graph", 
+    "diagram"
+  ],
   "main": "mongoviz.js",
   "bin": {
     "mongoviz": "./bin/mongoviz.js"
@@ -18,6 +27,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "dPacc",
   "license": "MIT"
 }
