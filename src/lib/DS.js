@@ -15,7 +15,8 @@ class Collection {
     const fieldsMarkup = this.fields
       .map((field, i) => {
         const fieldString = `${field.name}: ${field.options.type}`;
-        return `<tr><td port="${i}" align="center"><font color="white">${fieldString}</font></td></tr>`;
+        // Ensure each field has a port that can be referenced by the edges
+        return `<tr><td port="${field.name}" align="center"><font color="white">${fieldString}</font></td></tr>`;
       })
       .join("\n");
 
@@ -43,8 +44,7 @@ class ERD {
   }
 
   addRelation(from, to, config) {
-    const relationLabel = `${config.localField} (in ${from}) to ${config.foreignField} (in ${to})`;
-    const relationString = `${to}:${config.foreignField} -> ${from}:${config.localField} [label="${relationLabel}", arrowhead=none, shape="none", headlabel="N", taillabel="1"]`;
+    const relationString = `${to}:${config.foreignField} -> ${from}:${config.localField} [label="${to} to ${from}", arrowhead=none, shape="none", headlabel="N", taillabel="1"]`;
     this.relations.push(relationString);
   }
 
